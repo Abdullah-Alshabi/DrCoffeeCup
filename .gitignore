@@ -1,0 +1,32 @@
+# Ignore Java class files
+*.class
+
+# Ignore log files
+*.log
+
+# Ignore IDE files (e.g., IntelliJ IDEA, Eclipse)
+.idea/
+*.iml
+*.project
+*.classpath
+
+# Ignore compiled files
+*.jar
+*.war
+*.ear
+
+# Ignore build directory
+/build/
+bin/
+
+# Ignore temporary files
+*.swp
+*.bak
+
+# Ignore Maven and Gradle files
+target/
+*.gradle
+.gradle/
+
+# Ignore JDK/JRE installation
+.jdk/
