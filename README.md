@@ -1,6 +1,6 @@
 # DrCoffeeCup Project ☕️
 
-A coffee shop management system that allows customers to select different coffee types, choose cup sizes, add additives, and calculate the total price of their coffee. The system also includes a feature to track the number of coffee cups sold.
+DrCoffeeCup is a coffee shop management system that allows customers to select different coffee types, choose cup sizes, add additives, and calculate the total price of their coffee. The system also includes a feature to track the number of coffee cups sold.
 
 ## Features ✨
 
@@ -32,7 +32,7 @@ git clone https://github.com/yourusername/DrCoffeeCup.git
 2. Compile the Java files:
 
    ```bash
-   javac Main.java
+   javac *.java
    ```
 
 3. Run the program:
@@ -58,13 +58,18 @@ git clone https://github.com/yourusername/DrCoffeeCup.git
 ```
 DrCoffeeCup/
 │
-├── Main.java               # Entry point for the application.
+├── Main.java               # Entry point for the application. Starts the coffee shop process.
 ├── Coffee.java             # Defines the Coffee class with coffee details and price calculations.
 ├── DrCoffeeCup.java        # Manages coffee sales, menu, price calculations, and customer interactions.
+├── InstanceCounter.java    # Tracks the number of coffee cups created and prints the total count.
 ├── PickupTimeParser.java   # Handles AM/PM to 24-hour format conversion for pickup time.
 ├── DiscountCalculator.java # Calculates discounts based on the number of cups purchased.
 └── CoffeeMenuItem.java     # Defines the coffee menu item with a name and price.
 ```
+
+### **InstanceCounter.java**:
+- **Purpose**: This file is responsible for creating instances of the `Coffee` class and counting how many cups have been created by utilizing the static counter in the `Coffee` class.
+- **How it works**: When you run `InstanceCounter.java`, it will create two instances of `Coffee` and print the total number of cups created by calling `Coffee.getCount()`.
 
 ## Future Enhancements 🚀
 
